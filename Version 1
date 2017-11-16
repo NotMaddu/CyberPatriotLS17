@@ -1,0 +1,25 @@
+#!/bin/bash
+beginning_function()
+beginning_function(){
+        #Script sets up all necessary files.
+rm -R ScriptFilesMAD
+rm scriptout17.txt 
+echo "Old files deleted successfully."
+touch scriptout17.txt
+chmod 777 scriptout17.txt
+echo "Output file created successfully."
+mkdir ScriptFilesMAD
+cp scriptout17.txt ScriptFilesMAD
+cp linuxscript17.sh ScriptFilesMAD
+cd ScriptFilesMAD
+echo "Output and script files moved successfully."
+./linuxscript17.sh | tee scriptout17.txt
+main_function()
+}
+
+main_function(){
+        #Script begins to run its main functions.
+echo "Test"
+}
+
+exit
